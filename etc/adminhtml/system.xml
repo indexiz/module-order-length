@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="indexiz_order" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Order Length</label>
+            <tab>indexiz</tab>
+            <resource>Indexiz_OrderLength::order_length</resource>
+            <group id="order" translate="label" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="length" translate="label comment" sortOrder="10" showInDefault="1" showInWebsite="1">
+                    <label>Order Length</label>
+                    <validate>validate-number validate-greater-than-zero</validate>
+                    <comment>Enter a number between (0-9) for order length i.e. if you enter 6 then order will be like #000001 and if you enter 4 then order will be like #0001</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
