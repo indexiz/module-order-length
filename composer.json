@@ -1,0 +1,29 @@
+{
+    "name": "indexiz/module-order-length",
+    "description": "Indexiz Order Length module",
+    "require": {
+        "php": ">=7.1.0",
+        "indexiz/module-base": ">=1.0.0"
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "proprietary"
+    ],
+    "authors": [
+        {
+            "name": "Support",
+            "email": "mujtabam2dev@gmail.com",
+            "homepage": "https://indexiz.com/",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Indexiz\\OrderLength\\": ""
+        }
+    }
+}
